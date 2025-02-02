@@ -57,7 +57,7 @@ export class UiComponent {
   }
 
   getCurrentWeekType(): string {
-    return this.isOddWeek() ? 'нечетна' : 'четна';
+    return this.isOddWeek() ? 'четна' : 'нечетна';
   }
 
   private isOddWeek(): boolean {
@@ -68,7 +68,7 @@ export class UiComponent {
     const day = Math.floor(diff / oneDay);
     let weekNumber = Math.ceil((day + start.getDay() + 1) / 7);
 
-    return weekNumber % 2 === 1;
+    return weekNumber % 2 === 0;
   }
 
   private filterLecturesByWeek(lectures: Lecture[]): Lecture[] {
