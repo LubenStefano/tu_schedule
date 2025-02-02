@@ -68,7 +68,7 @@ export class UiComponent {
     const day = Math.floor(diff / oneDay);
     let weekNumber = Math.ceil((day + start.getDay() + 1) / 7);
 
-    return weekNumber % 2 !== 0;
+    return weekNumber % 2 === 1;
   }
 
   private filterLecturesByWeek(lectures: Lecture[]): Lecture[] {
