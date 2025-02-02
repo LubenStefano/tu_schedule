@@ -57,7 +57,7 @@ export class UiComponent {
   }
 
   getCurrentWeekType(): string {
-    return this.isOddWeek() ? 'четна' : 'нечетна';
+    return this.isOddWeek() ? 'нечетна' : 'четна';
   }
 
   private isOddWeek(): boolean {
