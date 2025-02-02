@@ -1,0 +1,44 @@
+<div class="container">
+  <h2>Седмичен график</h2>
+  <div>
+    <label for="group-select">Изберете група:</label>
+    <select id="group-select" [(ngModel)]="selectedGroup">
+      <option value="" hidden selected>-Изберете група-</option>
+      <option value="76a">76a</option>
+      <option value="76b">76b</option>
+      <option value="77a">77a</option>
+      <option value="77b">77b</option>
+      <option value="78a">78a</option>
+      <option value="78b">78b</option>
+    </select>
+  </div>
+  
+  <div class="week-type">
+    {{ getWeekLabel() }}: <strong>{{ getCurrentWeekType() }}</strong>
+  </div>
+
+  <div class="today-box" *ngIf="!isWeekend()">
+    <strong>Днес:</strong>
+    <div class="day-box">
+      <strong>{{ today }}</strong>
+      <ul>
+        <li *ngFor="let lecture of getTodayLectures()" [class.passed]="hasLecturePassed(lecture.time)" [class.happening-now]="isLectureHappeningNow(lecture.time)">
+          {{ lecture.time }} - {{ lecture.subject }} <small><i>({{ lecture.type }})</i></small>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div *ngIf="isWeekend()" class="weekend-message">
+    <p>Уикенд е! Ето графика за следващата седмица:</p>
+  </div>
+
+  <div *ngFor="let day of getFilteredDaysOfWeek()" class="day-box">
+  <strong>{{ day }}</strong>
+  <ul>
+    <li *ngFor="let lecture of getWeekLectures()[day]">
+      <b>{{ lecture.time }}</b> - {{ lecture.subject }} <small><i>({{ lecture.type }})</i></small>
+    </li>
+  </ul>
+</div>
+</div>
