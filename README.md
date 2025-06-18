@@ -9,10 +9,8 @@ This project was created for me and my colleagues at **Technical University of S
 ## 📷 Preview
 
 ![image](https://github.com/user-attachments/assets/1b24db37-3122-4aeb-9992-d7018170eea4)
-![image](https://github.com/user-attachments/assets/1b24db37-3122-4aeb-9992-d7018170eea4)
 
-
-
+![image](https://github.com/user-attachments/assets/05302b75-2b8b-4f8b-ab81-669f0f55af4b)
 
 ---
 
