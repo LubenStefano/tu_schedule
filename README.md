@@ -69,14 +69,6 @@ interface AllGroups {
 
 ---
 
-## 📸 UI Preview
-
-<div align="center">
-  <img src="https://i.imgur.com/kDEH6kY.png" alt="Schedule UI Preview" width="400"/>
-</div>
-
----
-
 ## 🧪 How to Run Locally
 
 ```bash
