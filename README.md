@@ -1,6 +1,3 @@
-Sure! Here's the **complete and polished `README.md` file** in proper **GitHub Markdown format**, fully written in English and ready to be used in your repository:
-
-````markdown
 # 📅 TU-Schedule – Weekly Schedule Viewer for Technical University of Sofia
 
 🚀 **Live App:** [https://tu-schedule.vercel.app/](https://tu-schedule.vercel.app/)
